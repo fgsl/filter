@@ -1,0 +1,29 @@
+{
+	"name" : "fgsl/filter",
+	"type" : "framework",
+	"description" : "Extensions of Laminas Filter",
+	"keywords" : [
+		"framework",
+		"mvc"
+	],
+	"homepage" : "https://github.com/fgsl/filter",
+	"license" : "AGPL-3.0-or-later",
+	"autoload" : {
+		"psr-4" : {
+			"Fgsl\\" : "src/Fgsl"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"Fgsl\\Test\\" : "tests/"
+		}
+	},
+	"require" : {
+		"php" : "^7.2",
+		"phpunit/phpunit" : "^8.5",
+		"laminas/laminas-filter": "^2.11"
+	},
+	"config" : {
+		"secure-http" : false
+	}
+}
